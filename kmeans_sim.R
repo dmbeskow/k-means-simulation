@@ -1,6 +1,6 @@
 # this installs and loads packages
 if (!require("pacman")) install.packages("pacman")
-pacman::p_load(tidymodels, Rfast)
+pacman::p_load(tidymodels, Rfast, Rcpp)
 
 # Create our dataset of three clusters
 # set.seed(27)
