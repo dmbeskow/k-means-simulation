@@ -3,7 +3,7 @@ if (!require("pacman")) install.packages("pacman")
 pacman::p_load(tidymodels, Rfast)
 
 # Create our dataset of three clusters
-set.seed(27)
+# set.seed(27)
 
 centers <- tibble(
   cluster = factor(1:3), 
