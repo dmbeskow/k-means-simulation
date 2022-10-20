@@ -19,7 +19,7 @@ points <-
     x1 = map2(num_points, x1, rnorm),
     x2 = map2(num_points, x2, rnorm)
   ) %>% 
-  select(-num_points) %>% 
+  dplyr::select(-num_points) %>% 
   unnest(cols = c(x1, x2))
 
 # Plot initial visualization
