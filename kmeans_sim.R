@@ -34,7 +34,7 @@ Sys.sleep(3)
 # Randomly sample points to identify initial centroids
 points$centroid <- 1
 points$centroid[sample(1:nrow(points),3)] <-2
-centroids <- points %>% filter(centroid == 2) %>% select(x1, x2)
+centroids <- points %>% dplyr::filter(centroid == 2) %>% dplyr::select(x1, x2)
 
 # Plot initial centroids
 p <- ggplot(points, aes(x1, x2, size = centroid, shape = factor(centroid), color = factor(centroid)) ) +
